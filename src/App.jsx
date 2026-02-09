@@ -11,8 +11,8 @@ function App() {
     const textRef = useRef(null)
 
     let imageSrc = noButtonHovered
-        ? "./public/cat-gun.gif"
-        : "./public/cat_with_flower.jpg"
+        ? "./cat-gun.gif"
+        : "./cat_with_flower.jpg"
 
     const onMouseEnter = () => {
         const noButtonRefWidth = noButtonRef.current.offsetWidth
@@ -32,7 +32,7 @@ function App() {
     }
 
     const onClickYesButton = () => {
-        imgRef.current.src = "./public/kiss.gif"
+        imgRef.current.src = "./kiss.gif"
 
         textRef.current.innerHTML = `<p style="font-style: normal;">Love you to the Moon and back 💜</p>`
 
